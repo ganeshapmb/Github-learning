@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="our-app">
+		<h2>Count: {{count}}</h2>
+		<button type="button" v-on:click="increment(1)" name="button">By 1 increment</button>
+		<button type="button" v-on:click="decrement(1)" name="button">By 1 decrement</button>
+
+		<button type="button" v-on:dblclick="increment(8)">By 8 increment</button>
+		<button type="button" @dblclick="decrement(8)">By 8 decrement</button>
+	</div>
+	<script type="text/javascript" src="video4.js"></script>
+
+</body>
+</html>
