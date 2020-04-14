@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.img{
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="our-app">
+		Message:{{message}}<br>
+		Name:{{fname}}<br>
+		<a v-bind:href="url" :title="title">{{fname}}</a><br>
+		<img :src="image" :class="{img:isActive}"><br>
+		<form>
+			<input type="text" name="" placeholder="name" :value="txtName">
+			<input type="text" name="" placeholder="Email" :value="txtEmail">
+			<button type="button" name="button">Submit</button>
+		</form>
+		<div v-html="htmlContext"></div>
+	</div>
+	<script type="text/javascript" src="video3.js"></script>
+
+</body>
+</html>
