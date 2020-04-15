@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="our-app">
+		<h2>Count: {{counter}}</h2>
+		<button type="button" name="button" @click.once="incrementby1">See Me</button><br>
+
+		<a href="https://www.fb.com" @click.prevent>Facebook</a>
+
+		<br>
+		<form class="" action="#" method="post" @submit.prevent>
+			<button type="submit" name="button">Register</button>
+		</form>
+
+		<br>
+		<div id="parent-div" @click="submitClick">
+			<button id="baby-div" @click.stop="submitClick">Click Me</button>
+		</div>
+		<br>
+
+		<div class="parent-class" @click.capture="parentclass">
+			<button type="button" @click="btnClick">Click Me</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="video7.js"></script>
+
+</body>
+</html>
