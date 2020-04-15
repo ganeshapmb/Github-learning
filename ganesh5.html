@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="our-app">
+		<div class="move-area" v-on:mousemove="movefunction" style="height: 100px;width: 70px; border: 2px dashed; ">
+			<span>{{x}},{{y}}</span>
+		</div>
+		<button type="button" name="button" @mouseover="overfunc">Mouseover</button>
+		<button type="button" name="button" @mouseout="outfunc">Mouseout</button>
+	</div>
+	<script type="text/javascript" src="video5.js"></script>
+
+</body>
+</html>
