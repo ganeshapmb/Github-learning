@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h3{
+			color: red;
+		}
+		h2{
+			color: blue;
+		}
+	</style>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="our-app">
+		{{watchmee()}}
+		<br>
+		<input type="text" placeholder="First Name" name="" v-model="fname" style="color:red;">
+		<input type="text" placeholder="Last Name" name="" v-model="lname">
+		<h3>Name: {{getFullName}}</h3>
+
+		<br>
+		<input type="text" v-model="celsius" name="">
+		<h2>Fahrenheit :{{ConvertToFahrenheit}}</h2>
+	</div>
+	<script type="text/javascript" src="video10.js"></script>
+
+</body>
+</html>
