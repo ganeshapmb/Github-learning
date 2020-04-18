@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	div{
+		color: red;
+	}
+	</style>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="our-app">
+		<ul type="square">
+			<li v-for="item in items">{{item}}</li>
+		</ul>
+		<ol>
+			<li v-for="faculty in facultys">
+				{{faculty.name}} illustrates {{faculty.subject}} have studied from school {{faculty.qualification.school}} and college {{faculty.qualification.college}} 
+			</li>
+		</ol>
+		<ul>
+			<li v-for="faculty in facultys">
+				{{faculty.name}} teaches {{faculty.subject}}
+				<p v-for="(addr,index) in faculty.qualification">
+					{{index}} - {{addr}}
+				</p>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="video13.js"></script>
+
+</body>
+</html>
