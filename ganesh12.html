@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h2{
+			color: blue;
+		}
+		p{
+			color: green;
+		}
+		div{
+			color: gray;
+		}
+	</style>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="our-app">
+		<h2 v-show="isActive">Upcoming serial</h2>
+		<div v-if="isActive">This is my if statement</div>
+		<div v-else>Else statement</div>
+		<br>
+		<button type="button" @click="countn">
+			Increment
+		</button>
+		<p>Count:{{count}}</p>
+		<div v-if="count==1">1 </div>
+		<div v-else-if="count==2">2</div>
+		<div v-else-if="count==3">3</div>
+		<div v-else>No match</div>
+	</div>
+	<script type="text/javascript" src="video12.js"></script>
+
+</body>
+</html>
